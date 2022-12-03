@@ -1,0 +1,37 @@
+2022-11-16 17:35:40.787 IST [1612] LOG:  checkpoint starting: time
+2022-11-16 17:37:23.973 IST [1612] LOG:  checkpoint complete: wrote 925 buffers (5.6%); 1 WAL file(s) added, 0 removed, 0 recycled; write=99.779 s, sync=3.036 s, total=103.190 s; sync files=249, longest=0.039 s, average=0.013 s; distance=4227 kB, estimate=4227 kB
+2022-11-16 17:40:40.980 IST [1612] LOG:  checkpoint starting: time
+2022-11-16 17:40:48.700 IST [1612] LOG:  checkpoint complete: wrote 50 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.312 s, sync=0.609 s, total=7.720 s; sync files=38, longest=0.042 s, average=0.016 s; distance=159 kB, estimate=3820 kB
+2022-11-16 17:45:40.703 IST [1612] LOG:  checkpoint starting: time
+2022-11-16 17:45:43.391 IST [1612] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.642 s, sync=0.199 s, total=2.688 s; sync files=6, longest=0.054 s, average=0.034 s; distance=1 kB, estimate=3438 kB
+2022-11-16 17:49:15.323 IST [13328] ERROR:  syntax error at or near ")" at character 44
+2022-11-16 17:49:15.323 IST [13328] STATEMENT:  INSERT INTO public.group_accounts_master (
+	) VALUES (
+	)
+	 returning group_id;
+2022-11-16 17:50:40.393 IST [1612] LOG:  checkpoint starting: time
+2022-11-16 17:50:47.834 IST [1612] LOG:  checkpoint complete: wrote 48 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.048 s, sync=0.588 s, total=7.442 s; sync files=39, longest=0.045 s, average=0.016 s; distance=158 kB, estimate=3110 kB
+2022-11-16 18:05:40.839 IST [1612] LOG:  checkpoint starting: time
+2022-11-16 18:05:41.833 IST [1612] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.428 s, sync=0.110 s, total=0.994 s; sync files=5, longest=0.044 s, average=0.022 s; distance=1 kB, estimate=2799 kB
+2022-11-16 18:10:40.846 IST [1612] LOG:  checkpoint starting: time
+2022-11-16 18:10:43.192 IST [1612] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.436 s, sync=0.121 s, total=2.347 s; sync files=5, longest=0.042 s, average=0.025 s; distance=1 kB, estimate=2519 kB
+2022-11-16 18:30:40.222 IST [1612] LOG:  checkpoint starting: time
+2022-11-16 18:30:45.759 IST [1612] LOG:  checkpoint complete: wrote 46 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.009 s, sync=0.427 s, total=5.538 s; sync files=36, longest=0.032 s, average=0.012 s; distance=174 kB, estimate=2285 kB
+2022-11-16 18:45:40.791 IST [1612] LOG:  checkpoint starting: time
+2022-11-16 18:45:43.909 IST [1612] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.984 s, sync=0.300 s, total=3.118 s; sync files=9, longest=0.055 s, average=0.034 s; distance=2 kB, estimate=2057 kB
+2022-11-16 18:50:40.917 IST [1612] LOG:  checkpoint starting: time
+2022-11-16 18:50:45.350 IST [1612] LOG:  checkpoint complete: wrote 36 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.790 s, sync=0.438 s, total=4.434 s; sync files=31, longest=0.044 s, average=0.015 s; distance=149 kB, estimate=1866 kB
+2022-11-16 18:56:23.121 IST [10824] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-16 18:56:23.121 IST [7536] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-16 18:56:23.122 IST [9164] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-16 18:56:23.123 IST [8176] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-16 18:56:23.123 IST [13328] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-17 09:41:45.962 IST [1612] LOG:  checkpoint starting: time
+2022-11-17 09:41:47.803 IST [1612] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.922 s, sync=0.490 s, total=1.842 s; sync files=6, longest=0.202 s, average=0.082 s; distance=14 kB, estimate=1681 kB
+2022-11-17 10:01:45.850 IST [1612] LOG:  checkpoint starting: time
+2022-11-17 10:01:53.806 IST [1612] LOG:  checkpoint complete: wrote 49 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.486 s, sync=1.324 s, total=7.958 s; sync files=38, longest=0.092 s, average=0.035 s; distance=182 kB, estimate=1531 kB

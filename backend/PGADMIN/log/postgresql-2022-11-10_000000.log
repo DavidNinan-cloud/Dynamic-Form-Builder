@@ -1,0 +1,76 @@
+2022-11-10 19:08:47.655 IST [12092] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-10 19:08:47.658 IST [24896] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 09:35:50.859 IST [7560] LOG:  checkpoint starting: time
+2022-11-11 09:35:52.066 IST [7560] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.460 s, sync=0.114 s, total=1.208 s; sync files=4, longest=0.048 s, average=0.029 s; distance=7 kB, estimate=3123 kB
+2022-11-11 09:40:50.078 IST [7560] LOG:  checkpoint starting: time
+2022-11-11 09:40:52.841 IST [7560] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.874 s, sync=0.105 s, total=2.763 s; sync files=7, longest=0.041 s, average=0.015 s; distance=32 kB, estimate=2814 kB
+2022-11-11 09:45:50.847 IST [7560] LOG:  checkpoint starting: time
+2022-11-11 09:45:55.675 IST [7560] LOG:  checkpoint complete: wrote 35 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.674 s, sync=0.728 s, total=4.829 s; sync files=32, longest=0.050 s, average=0.023 s; distance=131 kB, estimate=2545 kB
+2022-11-11 09:50:50.684 IST [7560] LOG:  checkpoint starting: time
+2022-11-11 09:50:53.376 IST [7560] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.675 s, sync=0.169 s, total=2.693 s; sync files=7, longest=0.047 s, average=0.025 s; distance=22 kB, estimate=2293 kB
+2022-11-11 09:51:26.272 IST [28020] ERROR:  relation "balance_sheet_variable" does not exist
+2022-11-11 09:51:26.272 IST [28020] STATEMENT:  ALTER TABLE Balance_Sheet_Variable
+	  RENAME TO payment_types;
+2022-11-11 09:55:50.385 IST [7560] LOG:  checkpoint starting: time
+2022-11-11 09:55:53.162 IST [7560] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.875 s, sync=0.151 s, total=2.777 s; sync files=8, longest=0.051 s, average=0.019 s; distance=41 kB, estimate=2068 kB
+2022-11-11 10:00:50.175 IST [7560] LOG:  checkpoint starting: time
+2022-11-11 10:00:55.450 IST [7560] LOG:  checkpoint complete: wrote 28 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.072 s, sync=0.401 s, total=5.276 s; sync files=25, longest=0.035 s, average=0.017 s; distance=130 kB, estimate=1874 kB
+2022-11-11 10:10:50.474 IST [7560] LOG:  checkpoint starting: time
+2022-11-11 10:10:52.294 IST [7560] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.357 s, sync=0.339 s, total=1.821 s; sync files=13, longest=0.040 s, average=0.027 s; distance=45 kB, estimate=1691 kB
+2022-11-11 11:20:50.402 IST [7560] LOG:  checkpoint starting: time
+2022-11-11 11:20:51.528 IST [7560] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.436 s, sync=0.193 s, total=1.128 s; sync files=5, longest=0.070 s, average=0.039 s; distance=25 kB, estimate=1524 kB
+2022-11-11 11:20:57.670 IST [4080] ERROR:  null value in column "payment_type_id" of relation "payment_types" violates not-null constraint
+2022-11-11 11:20:57.670 IST [4080] DETAIL:  Failing row contains (null, Cash, null).
+2022-11-11 11:20:57.670 IST [4080] STATEMENT:  INSERT INTO public.payment_types (
+	payment_type_id, payment_type) VALUES (
+	NULL::bigint, 'Cash'::character varying)
+	 returning payment_type_id;
+2022-11-11 11:21:11.594 IST [4080] ERROR:  null value in column "payment_type_id" of relation "payment_types" violates not-null constraint
+2022-11-11 11:21:11.594 IST [4080] DETAIL:  Failing row contains (null, Cash, null).
+2022-11-11 11:21:11.594 IST [4080] STATEMENT:  INSERT INTO public.payment_types (
+	payment_type_id, payment_type) VALUES (
+	NULL::bigint, 'Cash'::character varying)
+	 returning payment_type_id;
+2022-11-11 11:21:19.471 IST [4080] ERROR:  null value in column "AskRefference" of relation "payment_types" violates not-null constraint
+2022-11-11 11:21:19.471 IST [4080] DETAIL:  Failing row contains (1, Cash, null).
+2022-11-11 11:21:19.471 IST [4080] STATEMENT:  INSERT INTO public.payment_types (
+	payment_type_id, payment_type) VALUES (
+	'1'::bigint, 'Cash'::character varying)
+	 returning payment_type_id;
+2022-11-11 11:21:45.269 IST [4080] ERROR:  null value in column "payment_type_id" of relation "payment_types" violates not-null constraint
+2022-11-11 11:21:45.269 IST [4080] DETAIL:  Failing row contains (null, Cash).
+2022-11-11 11:21:45.269 IST [4080] STATEMENT:  INSERT INTO public.payment_types (
+	payment_type_id, payment_type) VALUES (
+	NULL::bigint, 'Cash'::character varying)
+	 returning payment_type_id;
+2022-11-11 11:21:56.427 IST [4080] ERROR:  duplicate key value violates unique constraint "Balance_Sheet_Variable_pkey"
+2022-11-11 11:21:56.427 IST [4080] DETAIL:  Key (payment_type_id)=(1) already exists.
+2022-11-11 11:21:56.427 IST [4080] STATEMENT:  INSERT INTO public.payment_types (
+	payment_type) VALUES (
+	'UPI'::character varying)
+	 returning payment_type_id;
+2022-11-11 11:23:14.867 IST [13160] ERROR:  column "AskRefference" of relation "payment_types" contains null values
+2022-11-11 11:23:14.867 IST [13160] STATEMENT:  ALTER TABLE IF EXISTS public.payment_types
+	    ADD COLUMN "AskRefference" boolean NOT NULL;
+	
+	SELECT * FROM public.payment_types
+	ORDER BY payment_type_id ASC
+2022-11-11 11:23:25.130 IST [13160] ERROR:  column "AskRefference" of relation "payment_types" contains null values
+2022-11-11 11:23:25.130 IST [13160] STATEMENT:  ALTER TABLE IF EXISTS public.payment_types
+	    ADD COLUMN "AskRefference" boolean NOT NULL;
+	
+2022-11-11 11:23:53.372 IST [23044] ERROR:  column "ask_refference" of relation "payment_types" contains null values
+2022-11-11 11:23:53.372 IST [23044] STATEMENT:  ALTER TABLE IF EXISTS public.payment_types
+	    ADD COLUMN ask_refference boolean NOT NULL;
+	
+	
+2022-11-11 11:24:19.606 IST [13160] ERROR:  column "AskRefference" of relation "payment_types" contains null values
+2022-11-11 11:24:19.606 IST [13160] STATEMENT:  ALTER TABLE IF EXISTS public.payment_types
+	ADD COLUMN "AskRefference" boolean NOT NULL;
+	
+2022-11-11 11:25:50.529 IST [7560] LOG:  checkpoint starting: time
+2022-11-11 11:25:51.739 IST [7560] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.912 s, sync=0.188 s, total=1.211 s; sync files=8, longest=0.044 s, average=0.024 s; distance=30 kB, estimate=1375 kB
+2022-11-11 11:30:50.745 IST [7560] LOG:  checkpoint starting: time
+2022-11-11 11:30:56.348 IST [7560] LOG:  checkpoint complete: wrote 31 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.350 s, sync=0.403 s, total=5.603 s; sync files=24, longest=0.058 s, average=0.017 s; distance=121 kB, estimate=1250 kB

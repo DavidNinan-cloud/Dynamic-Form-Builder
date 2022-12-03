@@ -1,0 +1,3 @@
+2022-11-19 18:51:40.329 IST [5924] LOG:  database system was shut down at 2022-11-19 18:50:56 IST
+2022-11-20 12:37:35.364 IST [5908] LOG:  checkpoint starting: time
+2022-11-20 12:37:37.319 IST [5908] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.012 s, sync=0.045 s, total=1.958 s; sync files=2, longest=0.027 s, average=0.023 s; distance=0 kB, estimate=0 kB

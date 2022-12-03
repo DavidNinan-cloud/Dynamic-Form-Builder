@@ -1,0 +1,13 @@
+2022-11-17 18:35:22.804 IST [15744] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-17 18:35:22.812 IST [1384] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-18 10:36:04.945 IST [1612] LOG:  checkpoint starting: time
+2022-11-18 10:36:10.077 IST [1612] LOG:  checkpoint complete: wrote 40 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.239 s, sync=0.360 s, total=5.136 s; sync files=33, longest=0.014 s, average=0.011 s; distance=156 kB, estimate=1393 kB
+2022-11-18 10:36:45.763 IST [12428] ERROR:  syntax error at or near ")" at character 39
+2022-11-18 10:36:45.763 IST [12428] STATEMENT:  INSERT INTO public.component_routes (
+	) VALUES (
+	)
+	 returning router_id;
+2022-11-18 10:41:04.093 IST [1612] LOG:  checkpoint starting: time
+2022-11-18 10:41:06.327 IST [1612] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.330 s, sync=0.102 s, total=2.235 s; sync files=4, longest=0.046 s, average=0.026 s; distance=1 kB, estimate=1254 kB

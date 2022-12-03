@@ -1,0 +1,163 @@
+2022-11-11 16:24:01.927 IST [16772] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 16:24:01.929 IST [23044] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 16:24:01.939 IST [25616] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 16:24:01.946 IST [21384] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 16:24:01.946 IST [22824] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 16:24:01.950 IST [13160] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 16:24:01.950 IST [28020] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 16:24:01.950 IST [4080] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 16:24:01.951 IST [23096] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 16:24:01.952 IST [16044] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 16:24:01.953 IST [8820] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 16:24:01.954 IST [8520] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 16:24:01.956 IST [1708] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 16:29:13.801 IST [19988] ERROR:  cannot determine result data type
+2022-11-11 16:29:13.801 IST [19988] DETAIL:  A result of type anyarray requires at least one input of type anyelement, anyarray, anynonarray, anyenum, anyrange, or anymultirange.
+2022-11-11 16:29:13.801 IST [19988] STATEMENT:  CREATE FUNCTION public.callbalancesheet()
+	    RETURNS anyarray
+	    LANGUAGE 'sql'
+	    
+	AS $BODY$se$BODY$;
+	
+	ALTER FUNCTION public.callbalancesheet()
+	    OWNER TO postgres;
+2022-11-11 16:30:12.217 IST [19988] ERROR:  syntax error at or near "CREATE" at character 88
+2022-11-11 16:30:12.217 IST [19988] STATEMENT:  CREATE FUNCTION public.callbalancesheet()
+	    RETURNS anyarray
+	    LANGUAGE 'sql'
+	    
+	CREATE OR REPLACE FUNCTION contact_countries_array(INT)
+	RETURNS text[] AS $$
+	  select array[contacts_primarycountry::text, contacts_othercountry::text]
+	  FROM contacts WHERE contacts_id = $1
+	$$
+	LANGUAGE SQL;
+	
+	ALTER FUNCTION public.callbalancesheet()
+	    OWNER TO postgres;
+2022-11-11 16:30:27.450 IST [19988] ERROR:  syntax error at or near "CREATE" at character 88
+2022-11-11 16:30:27.450 IST [19988] STATEMENT:  CREATE FUNCTION public.callbalancesheet()
+	    RETURNS anyarray
+	    LANGUAGE 'sql'
+	    
+	CREATE OR REPLACE FUNCTION contact_countries_array()
+	
+	RETURNS text[] AS $$
+	  select array[contacts_primarycountry::text, contacts_othercountry::text]
+	  FROM contacts WHERE contacts_id = $1
+	$$
+	LANGUAGE SQL;
+	
+	ALTER FUNCTION public.callbalancesheet()
+	    OWNER TO postgres;
+2022-11-11 16:30:45.927 IST [19988] ERROR:  syntax error at or near "CREATE" at character 88
+2022-11-11 16:30:45.927 IST [19988] STATEMENT:  CREATE FUNCTION public.callbalancesheet()
+	    RETURNS anyarray
+	    LANGUAGE 'sql'
+	    
+	CREATE OR REPLACE FUNCTION contact_countries_array(INT)
+	
+	RETURNS text[] AS $$
+	  select array[contacts_primarycountry::text, contacts_othercountry::text]
+	  FROM contacts WHERE contacts_id = $1;
+	
+	ALTER FUNCTION public.callbalancesheet()
+	    OWNER TO postgres;
+2022-11-11 16:30:49.959 IST [19988] ERROR:  syntax error at or near "CREATE" at character 88
+2022-11-11 16:30:49.959 IST [19988] STATEMENT:  CREATE FUNCTION public.callbalancesheet()
+	    RETURNS anyarray
+	    LANGUAGE 'sql'
+	    
+	CREATE OR REPLACE FUNCTION contact_countries_array()
+	
+	RETURNS text[] AS $$
+	  select array[contacts_primarycountry::text, contacts_othercountry::text]
+	  FROM contacts WHERE contacts_id = $1;
+	
+	ALTER FUNCTION public.callbalancesheet()
+	    OWNER TO postgres;
+2022-11-11 16:32:12.576 IST [19988] ERROR:  syntax error at or near "CREATE" at character 88
+2022-11-11 16:32:12.576 IST [19988] STATEMENT:  CREATE FUNCTION public.callbalancesheet()
+	    RETURNS anyarray
+	    LANGUAGE 'sql'
+	    
+	CREATE OR REPLACE FUNCTION callbalancesheet()
+	
+	RETURNS text[] AS $$
+	  select array[contacts_primarycountry::text, contacts_othercountry::text]
+	  FROM contacts WHERE contacts_id = $1;
+	
+	ALTER FUNCTION public.callbalancesheet()
+	    OWNER TO postgres;
+2022-11-11 16:32:45.893 IST [19988] ERROR:  syntax error at or near "CREATE" at character 88
+2022-11-11 16:32:45.893 IST [19988] STATEMENT:  CREATE FUNCTION public.callbalancesheet()
+	    RETURNS anyarray
+	    LANGUAGE 'sql'
+	    
+	CREATE OR REPLACE FUNCTION callbalancesheet()
+	    RETURNS ANYARRAY AS '
+	    SELECT ARRAY[contacts_primarycountry, contacts_othercountry] FROM contacts WHERE contacts_id = $1'
+	    LANGUAGE SQL;
+	
+	ALTER FUNCTION public.callbalancesheet()
+	    OWNER TO postgres;
+2022-11-11 16:33:15.971 IST [19988] ERROR:  syntax error at or near "CREATE" at character 88
+2022-11-11 16:33:15.971 IST [19988] STATEMENT:  CREATE FUNCTION public.callbalancesheet()
+	    RETURNS anyarray
+	    LANGUAGE 'sql'
+	    
+	CREATE OR REPLACE FUNCTION callbalancesheet()
+	    RETURNS ANYARRAY AS '[]'
+	    LANGUAGE SQL;
+	
+	ALTER FUNCTION public.callbalancesheet()
+	    OWNER TO postgres;
+2022-11-11 20:06:50.683 IST [19988] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 20:06:50.683 IST [27624] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-11 20:06:50.685 IST [27824] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-12 11:20:56.480 IST [7560] LOG:  checkpoint starting: time
+2022-11-12 11:21:00.881 IST [7560] LOG:  checkpoint complete: wrote 33 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.461 s, sync=0.464 s, total=4.410 s; sync files=29, longest=0.042 s, average=0.016 s; distance=140 kB, estimate=1139 kB
+2022-11-12 11:22:47.382 IST [11860] ERROR:  syntax error at or near "(" at character 34
+2022-11-12 11:22:47.382 IST [11860] STATEMENT:  Alter Table primary_accounts Add (increase_by_debit Boolean Not Null Default false)
+2022-11-12 11:25:56.889 IST [7560] LOG:  checkpoint starting: time
+2022-11-12 11:25:58.617 IST [7560] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.087 s, sync=0.206 s, total=1.729 s; sync files=11, longest=0.049 s, average=0.019 s; distance=42 kB, estimate=1029 kB
+2022-11-12 11:30:56.627 IST [7560] LOG:  checkpoint starting: time
+2022-11-12 11:30:58.944 IST [7560] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.657 s, sync=0.677 s, total=2.317 s; sync files=7, longest=0.133 s, average=0.097 s; distance=20 kB, estimate=928 kB
+2022-11-12 11:37:56.500 IST [11860] ERROR:  syntax error at or near "Modify" at character 30
+2022-11-12 11:37:56.500 IST [11860] STATEMENT:  Alter Table primary_accounts
+	Modify increase_by_credit Boolean Default true
+2022-11-12 11:40:08.767 IST [11860] ERROR:  syntax error at or near "select" at character 80
+2022-11-12 11:40:08.767 IST [11860] STATEMENT:  Alter Table primary_accounts
+	Alter Column increase_by_credit Set Default true
+	
+	select * from primary_accounts
+2022-11-12 11:40:56.956 IST [7560] LOG:  checkpoint starting: time
+2022-11-12 11:40:59.930 IST [7560] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.828 s, sync=0.302 s, total=2.975 s; sync files=8, longest=0.091 s, average=0.038 s; distance=29 kB, estimate=838 kB
+2022-11-12 11:42:05.939 IST [11860] ERROR:  syntax error at or near "INTO" at character 39
+2022-11-12 11:42:05.939 IST [11860] STATEMENT:  select * from primary_accounts
+	Insert INTO primary_accounts Values (Assets,false)
+2022-11-12 12:29:35.540 IST [11860] ERROR:  column "assets" does not exist at character 39
+2022-11-12 12:29:35.540 IST [11860] STATEMENT:  	Insert INTO primary_accounts Values (Assets,false)
+2022-11-12 12:29:53.585 IST [11860] ERROR:  invalid input syntax for type integer: "Assets" at character 39
+2022-11-12 12:29:53.585 IST [11860] STATEMENT:  	Insert INTO primary_accounts Values ('Assets',false)
+2022-11-12 12:30:25.594 IST [11860] ERROR:  null value in column "id" of relation "primary_accounts" violates not-null constraint
+2022-11-12 12:30:25.594 IST [11860] DETAIL:  Failing row contains (null, Assets, f).
+2022-11-12 12:30:25.594 IST [11860] STATEMENT:  	Insert INTO primary_accounts Values (default,'Assets',false)
+2022-11-12 12:35:57.019 IST [7560] LOG:  checkpoint starting: time
+2022-11-12 12:35:57.963 IST [7560] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.349 s, sync=0.125 s, total=0.948 s; sync files=3, longest=0.058 s, average=0.042 s; distance=1 kB, estimate=755 kB

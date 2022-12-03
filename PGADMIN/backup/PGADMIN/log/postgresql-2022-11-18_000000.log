@@ -1,0 +1,358 @@
+2022-11-18 14:36:33.276 IST [12316] ERROR:  syntax error at or near "CREATE" at character 83
+2022-11-18 14:36:33.276 IST [12316] STATEMENT:  CREATE FUNCTION public.call_all_routes()
+	    RETURNS json
+	    LANGUAGE 'sql'
+	    
+	CREATE OR REPLACE FUNCTION get_film (p_pattern VARCHAR) 
+	    RETURNS TABLE (
+	        film_title VARCHAR,
+	        film_release_year INT
+	) 
+	AS $$
+	BEGIN
+	    RETURN QUERY SELECT
+	        title,
+	        cast( release_year as integer)
+	    FROM
+	        film
+	    WHERE
+	        title ILIKE p_pattern ;
+	END; $$ 
+	
+	LANGUAGE 'plpgsql';
+	
+	ALTER FUNCTION public.call_all_routes()
+	    OWNER TO postgres;
+2022-11-18 14:41:11.903 IST [12316] ERROR:  syntax error at or near "CREATE" at character 83
+2022-11-18 14:41:11.903 IST [12316] STATEMENT:  CREATE FUNCTION public.call_all_routes()
+	    RETURNS json
+	    LANGUAGE 'sql'
+	    
+	CREATE OR REPLACE FUNCTION call_all_routes (p_pattern VARCHAR) 
+	    RETURNS TABLE (
+	        film_title VARCHAR,
+	        film_release_year INT
+	) 
+	AS $$
+	BEGIN
+	    RETURN QUERY SELECT
+	        router_link,
+	        cast( router_id as integer)
+	        cast( component_level as integer)
+	        cast( release_year as integer)
+	        under_router_id
+			child_route
+	    FROM
+	        components_routes
+	END; $$ 
+	
+	LANGUAGE 'plpgsql';
+	
+	ALTER FUNCTION public.call_all_routes()
+	    OWNER TO postgres;
+2022-11-18 14:42:56.069 IST [12316] ERROR:  syntax error at or near "CREATE" at character 83
+2022-11-18 14:42:56.069 IST [12316] STATEMENT:  CREATE FUNCTION public.call_all_routes()
+	    RETURNS json
+	    LANGUAGE 'sql'
+	    
+	CREATE OR REPLACE FUNCTION call_all_routes (p_pattern VARCHAR) 
+	    RETURNS TABLE (
+	        router_link VARCHAR,
+	        router_id INT,
+			component_level INT,
+			under_router_id,
+			child_route 
+	) 
+	AS $$
+	BEGIN
+	    RETURN QUERY SELECT
+	        router_link,
+	        cast( router_id as integer)
+	        cast( component_level as integer)
+	        cast( release_year as integer)
+	        under_router_id
+			child_route
+	    FROM
+	        components_routes
+	END; $$ 
+	
+	LANGUAGE 'plpgsql';
+	
+	ALTER FUNCTION public.call_all_routes()
+	    OWNER TO postgres;
+2022-11-18 14:43:08.773 IST [12316] ERROR:  syntax error at or near "CREATE" at character 83
+2022-11-18 14:43:08.773 IST [12316] STATEMENT:  CREATE FUNCTION public.call_all_routes()
+	    RETURNS json
+	    LANGUAGE 'sql'
+	    
+	CREATE OR REPLACE FUNCTION call_all_routes (p_pattern VARCHAR) 
+	    RETURNS TABLE (
+	        router_link VARCHAR,
+	        router_id INT,
+			component_level INT,
+			under_router_id INT,
+			child_route Boolean
+	) 
+	AS $$
+	BEGIN
+	    RETURN QUERY SELECT
+	        router_link,
+	        cast( router_id as integer)
+	        cast( component_level as integer)
+	        cast( release_year as integer)
+	        under_router_id
+			child_route
+	    FROM
+	        components_routes
+	END; $$ 
+	
+	LANGUAGE 'plpgsql';
+	
+	ALTER FUNCTION public.call_all_routes()
+	    OWNER TO postgres;
+2022-11-18 14:50:30.414 IST [12316] ERROR:  syntax error at or near "CREATE" at character 233
+2022-11-18 14:50:30.414 IST [12316] STATEMENT:  CREATE FUNCTION public.func_call_all_routes()
+	    RETURNS json
+	    LANGUAGE 'sql'
+	    
+	-- FUNCTION: public.fn_mt_billing_cancellaton_reason_dropdown()
+	
+	-- DROP FUNCTION IF EXISTS public.fn_mt_billing_cancellaton_reason_dropdown();
+	
+	CREATE OR REPLACE FUNCTION public.func_call_all_routes(
+	    )
+	    RETURNS TABLE(value bigint, routerLink character varying,component_level bigint,under_router_id bigint, child_route bigint) 
+	    LANGUAGE 'plpgsql'
+	    COST 100
+	    VOLATILE PARALLEL UNSAFE
+	    ROWS 1000
+	
+	AS $BODY$
+	begin
+	    return query 
+	    SELECT route_id, router_link, component_level, under_router_id, child_route
+	    FROM public.component_routes 
+		--where delete_flag=false and active=true;
+	    end;
+	    
+	$BODY$;
+	
+	ALTER FUNCTION public.fn_mt_billing_cancellaton_reason_dropdown()
+	    OWNER TO root;
+	
+	ALTER FUNCTION public.func_call_all_routes()
+	    OWNER TO postgres;
+2022-11-18 14:50:48.107 IST [12316] ERROR:  syntax error at or near "CREATE" at character 233
+2022-11-18 14:50:48.107 IST [12316] STATEMENT:  CREATE FUNCTION public.func_call_all_routes()
+	    RETURNS json
+	    LANGUAGE 'sql'
+	    
+	-- FUNCTION: public.fn_mt_billing_cancellaton_reason_dropdown()
+	
+	-- DROP FUNCTION IF EXISTS public.fn_mt_billing_cancellaton_reason_dropdown();
+	
+	CREATE OR REPLACE FUNCTION public.func_call_all_routes(
+	    )
+	    RETURNS TABLE(value bigint, routerLink character varying,component_level bigint,under_router_id bigint, child_route bigint) 
+	    LANGUAGE 'plpgsql'
+	
+	AS $BODY$
+	begin
+	    return query 
+	    SELECT route_id, router_link, component_level, under_router_id, child_route
+	    FROM public.component_routes 
+		--where delete_flag=false and active=true;
+	    end;
+	    
+	$BODY$;
+	
+	ALTER FUNCTION public.fn_mt_billing_cancellaton_reason_dropdown()
+	    OWNER TO root;
+	
+	ALTER FUNCTION public.func_call_all_routes()
+	    OWNER TO postgres;
+2022-11-18 14:50:59.899 IST [12316] ERROR:  syntax error at or near "CREATE" at character 233
+2022-11-18 14:50:59.899 IST [12316] STATEMENT:  CREATE FUNCTION public.func_call_all_routes()
+	    RETURNS json
+	    LANGUAGE 'sql'
+	    
+	-- FUNCTION: public.fn_mt_billing_cancellaton_reason_dropdown()
+	
+	-- DROP FUNCTION IF EXISTS public.fn_mt_billing_cancellaton_reason_dropdown();
+	
+	CREATE OR REPLACE FUNCTION public.func_call_all_routes(
+	    )
+	    RETURNS TABLE(value bigint, routerLink character varying,component_level bigint,under_router_id bigint, child_route bigint) 
+	    LANGUAGE 'plpgsql'
+	
+	AS $BODY$
+	begin
+	    return query 
+	    SELECT id, router_link, component_level, under_router_id, child_route
+	    FROM public.component_routes 
+		--where delete_flag=false and active=true;
+	    end;
+	    
+	$BODY$;
+	
+	ALTER FUNCTION public.fn_mt_billing_cancellaton_reason_dropdown()
+	    OWNER TO root;
+	
+	ALTER FUNCTION public.func_call_all_routes()
+	    OWNER TO postgres;
+2022-11-18 14:51:33.242 IST [12316] ERROR:  syntax error at or near "CREATE" at character 233
+2022-11-18 14:51:33.242 IST [12316] STATEMENT:  CREATE FUNCTION public.func_call_all_routes()
+	    RETURNS json
+	    LANGUAGE 'sql'
+	    
+	-- FUNCTION: public.fn_mt_billing_cancellaton_reason_dropdown()
+	
+	-- DROP FUNCTION IF EXISTS public.fn_mt_billing_cancellaton_reason_dropdown();
+	
+	CREATE OR REPLACE FUNCTION public.func_call_all_routes(
+	    )
+	    RETURNS TABLE(value bigint, routerLink character varying,component_level bigint,under_router_id bigint, child_route bigint) 
+	    LANGUAGE 'plpgsql'
+	
+	AS $BODY$
+	begin
+	    return query 
+	    SELECT route_id, router_link, component_level, under_router_id, child_route
+	    FROM public.component_routes 
+	    end;
+	    
+	$BODY$;
+	
+	ALTER FUNCTION public.fn_mt_billing_cancellaton_reason_dropdown()
+	    OWNER TO root;
+	
+	ALTER FUNCTION public.func_call_all_routes()
+	    OWNER TO postgres;
+2022-11-18 14:51:57.880 IST [12316] ERROR:  syntax error at or near "CREATE" at character 233
+2022-11-18 14:51:57.880 IST [12316] STATEMENT:  CREATE FUNCTION public.func_call_all_routes()
+	    RETURNS json
+	    LANGUAGE 'sql'
+	    
+	-- FUNCTION: public.fn_mt_billing_cancellaton_reason_dropdown()
+	
+	-- DROP FUNCTION IF EXISTS public.fn_mt_billing_cancellaton_reason_dropdown();
+	
+	CREATE OR REPLACE FUNCTION public.func_call_all_routes(
+	    )
+	    RETURNS TABLE(value bigint, routerLink character varying,component_level bigint,under_router_id bigint, child_route bigint) 
+	    LANGUAGE 'plpgsql'
+	
+	AS $BODY$
+	begin
+	    return query 
+	    SELECT route_id, router_link, component_level, under_router_id, child_route
+	    FROM public.component_routes 
+		--where delete_flag=false and active=true;
+	    end;
+	    
+	$BODY$;
+	
+	ALTER FUNCTION public.func_call_all_routes();
+	
+	ALTER FUNCTION public.func_call_all_routes()
+	    OWNER TO postgres;
+2022-11-18 14:52:06.085 IST [12316] ERROR:  syntax error at or near "CREATE" at character 233
+2022-11-18 14:52:06.085 IST [12316] STATEMENT:  CREATE FUNCTION public.func_call_all_routes()
+	    RETURNS json
+	    LANGUAGE 'sql'
+	    
+	-- FUNCTION: public.fn_mt_billing_cancellaton_reason_dropdown()
+	
+	-- DROP FUNCTION IF EXISTS public.fn_mt_billing_cancellaton_reason_dropdown();
+	
+	CREATE OR REPLACE FUNCTION public.func_call_all_routes(
+	    )
+	    RETURNS TABLE(value bigint, routerLink character varying,component_level bigint,under_router_id bigint, child_route bigint) 
+	    LANGUAGE 'plpgsql'
+	
+	AS $BODY$
+	begin
+	    return query 
+	    SELECT route_id, router_link, component_level, under_router_id, child_route
+	    FROM public.component_routes 
+		--where delete_flag=false and active=true;
+	    end;
+	    
+	$BODY$;
+	;
+	
+	ALTER FUNCTION public.func_call_all_routes()
+	    OWNER TO postgres;
+2022-11-18 14:52:13.198 IST [12316] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-18 14:52:13.199 IST [10236] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-18 14:52:13.204 IST [12400] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-18 14:52:13.208 IST [12428] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-19 10:12:22.465 IST [7080] ERROR:  current database cannot be renamed
+2022-11-19 10:12:22.465 IST [7080] STATEMENT:  alter database "myAppDatabase" rename to "Learning_SQL";
+2022-11-19 10:12:56.720 IST [7080] ERROR:  current database cannot be renamed
+2022-11-19 10:12:56.720 IST [7080] STATEMENT:  alter database "myAppDatabase" rename to "Learning_SQL";
+2022-11-19 10:13:11.130 IST [7080] ERROR:  current database cannot be renamed
+2022-11-19 10:13:11.130 IST [7080] STATEMENT:  alter database "myAppDatabase" rename to "Learning_SQL";
+2022-11-19 10:13:22.276 IST [7160] ERROR:  current database cannot be renamed
+2022-11-19 10:13:22.276 IST [7160] STATEMENT:  alter database "myAppDatabase" rename to "Learning_SQL";
+2022-11-19 10:13:42.113 IST [18364] ERROR:  database "myAppDatabase" is being accessed by other users
+2022-11-19 10:13:42.113 IST [18364] DETAIL:  There are 2 other sessions using the database.
+2022-11-19 10:13:42.113 IST [18364] STATEMENT:  DROP DATABASE IF EXISTS "myAppDatabase";
+	
+2022-11-19 10:14:18.528 IST [18364] ERROR:  database "myAppDatabase" is being accessed by other users
+2022-11-19 10:14:18.528 IST [18364] DETAIL:  There are 2 other sessions using the database.
+2022-11-19 10:14:18.528 IST [18364] STATEMENT:  DROP DATABASE IF EXISTS "myAppDatabase";
+	
+2022-11-19 10:14:36.375 IST [18364] ERROR:  database "myAppDatabase" is being accessed by other users
+2022-11-19 10:14:36.375 IST [18364] DETAIL:  There are 2 other sessions using the database.
+2022-11-19 10:14:36.375 IST [18364] STATEMENT:  DROP DATABASE IF EXISTS "myAppDatabase";
+	
+2022-11-19 10:15:32.266 IST [2964] ERROR:  canceling statement due to user request
+2022-11-19 10:15:32.266 IST [2964] STATEMENT:  SELECT pg_catalog.pg_cancel_backend(2964);
+2022-11-19 10:15:38.549 IST [2964] FATAL:  terminating connection due to administrator command
+2022-11-19 10:15:38.549 IST [2964] STATEMENT:  SELECT pg_catalog.pg_terminate_backend(2964);
+2022-11-19 10:15:38.620 IST [2208] WARNING:  PID 2964 is not a PostgreSQL backend process
+2022-11-19 10:15:43.528 IST [7080] FATAL:  terminating connection due to administrator command
+2022-11-19 10:15:47.123 IST [7160] FATAL:  terminating connection due to administrator command
+2022-11-19 10:15:49.441 IST [2208] FATAL:  terminating connection due to administrator command
+2022-11-19 10:15:49.441 IST [2208] STATEMENT:  SELECT pg_catalog.pg_terminate_backend(2208);
+2022-11-19 10:15:49.543 IST [14892] WARNING:  PID 2208 is not a PostgreSQL backend process
+2022-11-19 10:16:05.270 IST [15608] ERROR:  cannot drop the currently open database
+2022-11-19 10:16:05.270 IST [15608] STATEMENT:  DROP DATABASE IF EXISTS "myAppDatabase"
+2022-11-19 10:16:05.697 IST [15608] ERROR:  cannot drop the currently open database
+2022-11-19 10:16:05.697 IST [15608] STATEMENT:  DROP DATABASE IF EXISTS "myAppDatabase"
+2022-11-19 10:16:10.366 IST [15608] ERROR:  cannot drop the currently open database
+2022-11-19 10:16:10.366 IST [15608] STATEMENT:  DROP DATABASE IF EXISTS "myAppDatabase"
+2022-11-19 10:16:18.904 IST [15608] ERROR:  cannot drop the currently open database
+2022-11-19 10:16:18.904 IST [15608] STATEMENT:  DROP DATABASE IF EXISTS "myAppDatabase"
+2022-11-19 10:16:29.604 IST [18364] ERROR:  database "myAppDatabase" is being accessed by other users
+2022-11-19 10:16:29.604 IST [18364] DETAIL:  There is 1 other session using the database.
+2022-11-19 10:16:29.604 IST [18364] STATEMENT:  DROP DATABASE IF EXISTS "myAppDatabase";
+	
+2022-11-19 10:16:39.577 IST [15608] FATAL:  terminating connection due to administrator command
+2022-11-19 10:16:55.341 IST [18180] ERROR:  cannot drop the currently open database
+2022-11-19 10:16:55.341 IST [18180] STATEMENT:  DROP DATABASE IF EXISTS "myAppDatabase"
+2022-11-19 10:16:59.286 IST [18180] ERROR:  cannot drop the currently open database
+2022-11-19 10:16:59.286 IST [18180] STATEMENT:  DROP DATABASE IF EXISTS "myAppDatabase"
+2022-11-19 10:17:10.154 IST [18364] ERROR:  database "myAppDatabase" is being accessed by other users
+2022-11-19 10:17:10.154 IST [18364] DETAIL:  There is 1 other session using the database.
+2022-11-19 10:17:10.154 IST [18364] STATEMENT:  DROP DATABASE IF EXISTS "myAppDatabase";
+	
+2022-11-19 10:17:17.608 IST [18180] FATAL:  terminating connection due to administrator command
+2022-11-19 10:17:20.200 IST [14112] FATAL:  terminating connection due to administrator command
+2022-11-19 10:17:20.200 IST [14112] STATEMENT:  SELECT pg_catalog.pg_terminate_backend(14112);
+2022-11-19 10:17:20.298 IST [13784] WARNING:  PID 14112 is not a PostgreSQL backend process
+2022-11-19 10:17:47.197 IST [1612] LOG:  checkpoint starting: immediate force wait
+2022-11-19 10:17:47.699 IST [1612] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.016 s, sync=0.139 s, total=0.507 s; sync files=6, longest=0.028 s, average=0.024 s; distance=1 kB, estimate=1129 kB
+2022-11-19 10:22:47.715 IST [1612] LOG:  checkpoint starting: time
+2022-11-19 10:24:32.124 IST [1612] LOG:  checkpoint complete: wrote 925 buffers (5.6%); 0 WAL file(s) added, 0 removed, 1 recycled; write=99.642 s, sync=2.936 s, total=104.409 s; sync files=249, longest=0.036 s, average=0.012 s; distance=4227 kB, estimate=4227 kB
+2022-11-19 13:27:17.677 IST [18364] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-19 13:27:17.781 IST [9944] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-19 13:27:17.862 IST [15916] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

@@ -1,0 +1,15 @@
+2022-11-08 18:28:53.487 IST [14684] LOG:  database system was shut down at 2022-11-08 18:28:39 IST
+2022-11-08 18:33:53.491 IST [7560] LOG:  checkpoint starting: time
+2022-11-08 18:34:03.154 IST [7560] LOG:  checkpoint complete: wrote 73 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=7.537 s, sync=0.343 s, total=9.664 s; sync files=31, longest=0.032 s, average=0.012 s; distance=394 kB, estimate=394 kB
+2022-11-08 18:38:53.158 IST [7560] LOG:  checkpoint starting: time
+2022-11-08 18:40:37.978 IST [7560] LOG:  checkpoint complete: wrote 931 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=101.243 s, sync=3.417 s, total=104.820 s; sync files=251, longest=0.038 s, average=0.014 s; distance=4264 kB, estimate=4264 kB
+2022-11-08 18:43:53.991 IST [7560] LOG:  checkpoint starting: time
+2022-11-08 18:43:59.228 IST [7560] LOG:  checkpoint complete: wrote 42 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.489 s, sync=0.512 s, total=5.238 s; sync files=27, longest=0.056 s, average=0.019 s; distance=129 kB, estimate=3850 kB
+2022-11-08 18:45:56.414 IST [22840] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-08 18:45:56.415 IST [23072] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-08 18:45:56.415 IST [16032] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-11-08 18:48:53.234 IST [7560] LOG:  checkpoint starting: time
+2022-11-08 18:48:56.481 IST [7560] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.087 s, sync=0.307 s, total=3.247 s; sync files=10, longest=0.052 s, average=0.031 s; distance=39 kB, estimate=3469 kB
