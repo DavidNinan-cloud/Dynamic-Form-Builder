@@ -1,0 +1,51 @@
+import doctorPic from "../../../../../OPD/assets/Images/doctorPic.jpg";
+export const bookAppointmentData = [
+  {
+    "#": doctorPic,
+    "Patient Name": "John Doe",
+    "Assigned Doctor": "Dr.Jacob Rayan",
+    Date: "27/4/2022",
+    Diseases: "fever",
+    Action: "",
+  },
+  {
+    "#": doctorPic,
+    "Patient Name": "John Doe",
+    "Assigned Doctor": "Dr.Jacob Rayan",
+    Date: "27/4/2022",
+    Diseases: "cholera",
+    Action: "",
+  },
+  {
+    "#": doctorPic,
+    "Patient Name": "John Doe",
+    "Assigned Doctor": "Dr.Jacob Rayan",
+    Date: "27/4/2022",
+    Diseases: "jaundice",
+    Action: "",
+  },
+  {
+    "#": doctorPic,
+    "Patient Name": "John Doe",
+    "Assigned Doctor": "Dr.Jacob Rayan",
+    Date: "27/4/2022",
+    Diseases: "typhod",
+    Action: "",
+  },
+  {
+    "#": doctorPic,
+    "Patient Name": "John Doe",
+    "Assigned Doctor": "Dr.Jacob Rayan",
+    Date: "27/4/2022",
+    Diseases: "maleria",
+    Action: "",
+  },
+  {
+    "#": doctorPic,
+    "Patient Name": "John Doe",
+    "Assigned Doctor": "Dr.Jacob Rayan",
+    Date: "27/4/2022",
+    Diseases: "infection",
+    Action: "",
+  },
+];

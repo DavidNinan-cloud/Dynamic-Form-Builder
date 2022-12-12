@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Main Div - Scrollbar  */
+.MuiBox-root::-webkit-scrollbar{
+  width: 10px !important;
+}
+
+.MuiBox-root::-webkit-scrollbar-track{
+  background:white !important;
+}
+
+.MuiBox-root::-webkit-scrollbar-thumb{
+  background-color:  #8a8383;
+  border-radius: 80px;
+  border: 1px solid #cfd3d3;
+}
+
+/* Sidebar Scrollbar Style  */
+.MuiDrawer-paper::-webkit-scrollbar {
+  width: 7px !important;
+}
+.MuiDrawer-paper::-webkit-scrollbar-track {
+  background: white !important;
+}
+.MuiDrawer-paper::-webkit-scrollbar-thumb {
+  background-color: #dfe6e9;    
+  border-radius: 80px;     
+  border: 1px solid #2d2e2e; 
+}
+/* Scrollbar for Table */
+.MuiTableContainer-root::-webkit-scrollbar {
+  width: 7px !important;
+  height: 10px !important;
+}
+.MuiTableContainer-root::-webkit-scrollbar-track {
+  background: white !important;
+  border-radius: 30px; 
+}
+.MuiTableContainer-root::-webkit-scrollbar-thumb {
+  background-color: #8a8383;    
+  border-radius: 50px;     
+  border: 0.5px solid #cfd3d3; 
+}
+
+.MuiTable-root::-webkit-scrollbar {
+  width: 7px !important;
+  height: 10px !important;
+}
+.MuiTable-root::-webkit-scrollbar-track {
+  background: white !important;
+  border-radius: 30px; 
+}
+.MuiTable-root::-webkit-scrollbar-thumb {
+  background-color: #838a8a;    
+  border-radius: 50px;     
+  border: 0.5px solid #cfd3d3; 
+}
+
+/* Scrollbar for Dashboard- Doctor List */
+.doctorListDashboard::-webkit-scrollbar {
+  width: 7px !important;
+  height: 10px !important;
+}
+.doctorListDashboard::-webkit-scrollbar-track {
+  background: white !important;
+  border-radius: 30px; 
+}
+.doctorListDashboard::-webkit-scrollbar-thumb {
+  background-color: #f4f7f8;    
+  border-radius: 50px;     
+  border: 0.5px solid #b9bdbd; 
+}
